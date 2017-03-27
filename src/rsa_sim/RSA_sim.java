@@ -20,7 +20,7 @@ public class RSA_sim {
         
         char randomChar = 'a';
         int asciival = EN.ascii2int(randomChar);
-        char answer = DC.int2ascii('a');
+        char answer = DC.int2ascii(asciival);
         
         System.out.println("The ascii value for " + randomChar + " is " + asciival);
         System.out.println("The character corresponding to this ascii value is " + answer);

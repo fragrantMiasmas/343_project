@@ -18,8 +18,11 @@ public class Decrypt {
         return a;
     }
      
-     public void decrypt(int n, int d){ //pass in private key
+     public void decrypt(int n, int d, int ciphertext){ //pass in private key
          //Plaintext = Ciphertext * d mod n
+         
+         int plaintext = (ciphertext * d) % n; //ascii values
+         
      }
     
 }

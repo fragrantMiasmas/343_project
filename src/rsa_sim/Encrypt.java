@@ -37,8 +37,9 @@ public class Encrypt {
         return input;
     }
     
-    public void encrypt(int n, int e){ //pass in the public key, need e and n values
+    public void encrypt(int n, int e, int plaintext){ //pass in the public key, e and n values
         //Ciphertext = Plaintext * e mod n
+        int ciphertext = (plaintext * e) % n;
     }
    
 }

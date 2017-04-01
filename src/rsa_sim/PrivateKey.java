@@ -9,7 +9,7 @@ package rsa_sim;
  *
  * @author ElizabethReed PC
  */
-public class PrivateKey { 
+public class PrivateKey { //extend keys
     
     PublicKey PK = new PublicKey(); //need to extract n and e value to form private key
     

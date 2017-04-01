@@ -9,7 +9,7 @@ package rsa_sim;
  *
  * @author ElizabethReed PC
  */
-public class KeyPair {
+public class PublicKey {
     
      public int p(){
         int p = 0; //change to prime later
@@ -21,22 +21,22 @@ public class KeyPair {
         return q;
     }
     
-    public void makePublicKey(int p, int q){
-            
+    public int n(int p, int q){
         int n= p*q;
-       
-        int middleman = (p-1)*(q-1);
-        //add calcuation of e
-        //two numbers e and middleman must be coprime
-        int e;
-        
-        //return pair(n,e)
+        return n;
     }
     
-    public void makePrivateKey(){
+    public int e(int n, int p, int q){
+
+        int middleman = (p-1)*(q-1);
         
-        //use extended euclidean algorithm for ed = 1 mod (p − 1)(q − 1)
-        //want to return (n,d)
+        //add calcuation of e
+        //two numbers e and middleman must be coprime
+        int e = 0;
+        return e;
+       
     }
+    //return pair(n,e)
+    
     
 }

@@ -15,5 +15,9 @@ public class Decrypt {
         char a = (char) b;
         return a;
     }
+     
+     public void decrypt(){ //pass in private key
+         //Plaintext = Ciphertext * d mod n
+     }
     
 }

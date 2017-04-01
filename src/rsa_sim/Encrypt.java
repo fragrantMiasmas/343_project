@@ -40,5 +40,8 @@ public class Encrypt {
         return input;
     }
     
+    public void encrypt(){ //pass in the public key
+        //Ciphertext = Plaintext * e mod n
+    }
    
 }

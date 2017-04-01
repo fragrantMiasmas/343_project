@@ -11,12 +11,14 @@ package rsa_sim;
  */
 public class Decrypt {
     
+    PrivateKey PrivateK = new PrivateKey(); //need d and n values
+    
      public char int2ascii(int b){ //convert random number back to ascii
         char a = (char) b;
         return a;
     }
      
-     public void decrypt(){ //pass in private key
+     public void decrypt(int n, int d){ //pass in private key
          //Plaintext = Ciphertext * d mod n
      }
     

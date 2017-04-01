@@ -15,19 +15,16 @@ import java.util.Random;
  */
 public class Encrypt {
     
-     Random randomNumbers = new Random();
+    PublicKey PublicK = new PublicKey(); //need e and n values to encrypt
+    Random randomNumbers = new Random();
     
     public int ascii2int(char a){
         int b = (int) a;
         return b;
     }
-    
-     public int randomNum(int b, int n){ //converts ascii to random number
-         int rand = randomNumbers.nextInt(n); 
-         return rand;
-     }
+   
      
-    // for strings        
+    // for strings?        
     public int[] randomArray(int n){
         
         int[] input = new int[n];
@@ -40,7 +37,7 @@ public class Encrypt {
         return input;
     }
     
-    public void encrypt(){ //pass in the public key
+    public void encrypt(int n, int e){ //pass in the public key, need e and n values
         //Ciphertext = Plaintext * e mod n
     }
    

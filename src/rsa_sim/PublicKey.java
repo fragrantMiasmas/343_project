@@ -5,19 +5,23 @@
  */
 package rsa_sim;
 
+import java.util.Random;
+
 /**
  *
  * @author ElizabethReed PC
  */
 public class PublicKey {
     
-     public int p(){
-        int p = 0; //change to prime later
+    Random randomNumbers = new Random();
+    
+    int p(){
+        int p = 0; //change to random prime later
         return p;
     }
     
-    public int q(){
-        int q = 0; //change to prime later
+    int q(){
+        int q = 0; //change to random prime later
         return q;
     }
     
@@ -30,9 +34,8 @@ public class PublicKey {
 
         int middleman = (p-1)*(q-1);
         
-        //add calcuation of e
-        //two numbers e and middleman must be coprime
-        int e = 0;
+        //two numbers e and middleman must be coprime, need to check later
+        int e = randomNumbers.nextInt(middleman) + 1; //e must fall between 1 and middleman
         return e;
        
     }

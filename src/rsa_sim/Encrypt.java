@@ -40,30 +40,5 @@ public class Encrypt {
         return input;
     }
     
-    public int p(){
-        int p = 0; //change to prime later
-        return p;
-    }
-    
-    public int q(){
-        int q = 0; //change to prime later
-        return q;
-    }
-    
-    public void makePublicKey(int p, int q){
-        
-        int n= p*q;
-        //two numbers e and (p – 1)(q – 1) must be coprime
-        //add calcuation of e
-        int e;
-        
-        //return pair(n,e)
-    }
-    
-    public void makePrivateKey(){
-        
-        //use extended euclidean algorithm for ed = 1 mod (p − 1)(q − 1)
-        //want to return (n,d)
-    }
-    
+   
 }

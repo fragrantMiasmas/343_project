@@ -15,6 +15,11 @@ public class PublicKey {
     
     Random randomNumbers = new Random();
     
+     //return pair(n,e)
+    PublicKey(){
+        
+    }
+    
     int p(){
         int p = 0; //change to random prime later
         return p;
@@ -39,7 +44,6 @@ public class PublicKey {
         return e;
        
     }
-    //return pair(n,e)
-    
+      
     
 }

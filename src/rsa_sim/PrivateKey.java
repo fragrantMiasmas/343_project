@@ -13,6 +13,10 @@ public class PrivateKey {
     
     PublicKey PK = new PublicKey(); //need to extract n and e value to form private key
     
+    PrivateKey(){
+        
+    }
+    
     int d(int e, int p, int q){
         int d = 0; //change later to include calcuation method
         return d;

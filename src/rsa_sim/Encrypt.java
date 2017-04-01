@@ -16,6 +16,7 @@ import java.util.Random;
 public class Encrypt {
     
     PublicKey PublicK = new PublicKey(); //need e and n values to encrypt
+    
     Random randomNumbers = new Random();
     
     public int ascii2int(char a){

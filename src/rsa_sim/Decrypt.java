@@ -13,6 +13,8 @@ public class Decrypt {
     
     PrivateKey PrivateK = new PrivateKey(); //need d and n values
     
+    int d = PrivateK.d(0, 0, 0);
+    
      public char int2ascii(int b){ //convert random number back to ascii
         char a = (char) b;
         return a;

@@ -9,11 +9,10 @@ package rsa_sim;
  *
  * @author ElizabethReed PC
  */
-public class Decrypt {
+public class Decrypter {
     
     PrivateKey PrivateK = new PrivateKey(); //need d and n values
     
-    int d = PrivateK.d(0, 0, 0);
     
      public char int2ascii(int b){ //convert random number back to ascii
         char a = (char) b;

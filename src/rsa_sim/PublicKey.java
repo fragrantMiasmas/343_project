@@ -17,16 +17,23 @@ public class PublicKey {
     
      //return pair(n,e)
     PublicKey(){
-        
+        int n;
+        int e;
     }
     
+//    public boolean isPrime(){
+//        
+//    }
+    
     int p(){
-        int p = 0; //change to random prime later
+//        int p = randomNumbers.nextInt(100); //change to random prime later
+        int p = 7;
         return p;
     }
     
     int q(){
-        int q = 0; //change to random prime later
+//        int q = randomNumbers.nextInt(100); //change to random prime later
+        int q = 13;
         return q;
     }
     

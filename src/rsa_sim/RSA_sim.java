@@ -15,8 +15,8 @@ public class RSA_sim {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Encrypt EN = new Encrypt();
-        Decrypt DC = new Decrypt();
+        Encrypter EN = new Encrypter();
+        Decrypter DC = new Decrypter();
         
         char randomChar = 'a';
         int asciival = EN.ascii2int(randomChar);

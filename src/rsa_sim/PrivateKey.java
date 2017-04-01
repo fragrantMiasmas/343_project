@@ -14,7 +14,8 @@ public class PrivateKey {
     PublicKey PK = new PublicKey(); //need to extract n and e value to form private key
     
     PrivateKey(){
-        
+        int n;
+        int d;
     }
     
     int d(int e, int p, int q){

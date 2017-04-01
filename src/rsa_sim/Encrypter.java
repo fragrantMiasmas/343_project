@@ -13,7 +13,7 @@ import java.util.Random;
  *
  * @author ElizabethReed PC
  */
-public class Encrypt {
+public class Encrypter {
     
     PublicKey PublicK = new PublicKey(); //need e and n values to encrypt
     

@@ -10,7 +10,7 @@ import java.util.Random;
  */
 
 /**
- *
+ * Marleigh
  * @author ElizabethReed PC
  */
 public class Encrypter {

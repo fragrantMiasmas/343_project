@@ -10,7 +10,7 @@ package rsa_sim;
  *
  * @author ElizabethReed PC
  */
-public class PublicKey { //extend keys
+public class PublicKey extends Keys{ //extend keys
 
     
      //return pair(n,e) from superclass keys

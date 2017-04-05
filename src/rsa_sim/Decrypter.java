@@ -19,11 +19,13 @@ public class Decrypter {
         return a;
     }
      
-     public void decrypt(int n, int d, int ciphertext){ //pass in private key
+     public void decrypt(PrivateKey PK, int ciphertext){ //pass in private key
          //Plaintext = Ciphertext * d mod n
-         
+         int n = PK.n();
+         int e = PK.e(n);
+         int d = PK.d(e,n);
          int plaintext = (ciphertext * d) % n; //ascii values
          
      }
-    
+         
 }

@@ -11,22 +11,21 @@ package rsa_sim;
  */
 public class PrivateKey extends Keys{ //extend keys
     
-    PublicKey PK = new PublicKey(); //need to extract n and e value to form private key
+    Keys key1;
     
     PrivateKey(){
-        int n;
         int d;
     }
     
-    int d(int e, int p, int q){
-        int d = 0; //change later to include calcuation method
-        return d;
+    PrivateKey(Keys input){
+        input = key1;
+        int d;
     }
     
-    public void makePrivateKey(){
-        
+    int d(int e, int n){
         //use extended euclidean algorithm for ed = 1 mod (p − 1)(q − 1)
-        //want to return (n,d)
+        int d = 29; //change later to include calcuation method
+        return d;
     }
     
 }

@@ -21,29 +21,31 @@ public class Keys { //superclass
 //    }
     Random randomNumbers = new Random();
     
-       int p(){
+    private int p(){
 //        int p = randomNumbers.nextInt(100); //change to random prime later
         int p = 7;
         return p;
     }
     
-    int q(){
+    private int q(){
 //        int q = randomNumbers.nextInt(100); //change to random prime later
         int q = 13;
         return q;
     }
     
-     public int n(int p, int q){
-        int n= p*q;
+     public int n(){
+//        int pVal = p();
+        int n = p()* q();
         return n;
     }
     
-      public int e(int n, int p, int q){
+      public int e(int n){
 
-        int middleman = (p-1)*(q-1);
+        int middleman = (p()-1)*(q()-1);
         
         //two numbers e and middleman must be coprime, need to check later
         int e = randomNumbers.nextInt(middleman) + 1; //e must fall between 1 and middleman
+        e = 5; //for debugging
         return e;
        
     }

@@ -12,11 +12,16 @@ package rsa_sim;
  */
 public class PublicKey extends Keys{ //extend keys
 
+    Keys key1;
     
      //return pair(n,e) from superclass keys
+    
     PublicKey(){
-        int n;
-        int e;
+        
+    }
+    
+    PublicKey(Keys input){
+        input = key1;
     }
   
     
